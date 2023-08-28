@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang= "es">
+    <head>
+        <title> Plantilla</title>
+        <meta charset="UTF-8">
+        <Link href="./estilos/principal.css"
+        type="text/css"
+        rel="stylesheet">
+
+        <Link href="./estilos/estilotablas.css"
+        type="text/css"
+        rel="stylesheet">
+        <!--  SE PUEDEN CONECTAR CON VARIOS CSS--> 
+    </head>
+    <body>
+        
+        <form action=”página/servicio” method=”GET o POST” enctype="multipart/form-data o aplication/x-www-form-urlencoded" target="_blank">
+
+        </form>
+       
+       
+       
+       <form action="./scripts/respuesta.php" method="POST" enctype="multipart/form-data" target="_blank">
+       
+           <label for="Nombre">Nombre del usuario </label><input type="text" id="Nombre" name="Nombre" size="10" maxlength="20" placeholder="Nombre" required><br>
+       
+           <label for="Cantidad">Candidad de Productos </label><input id="Cantidad" name="Cantidad" type="number" value="5" min="5" max="200" step="5"><br>
+       
+           <label for="Domicilio">Entrega a Domicilio</label> <input id="Domicilio" name="tipoEntrega" type="radio" value="Domicilio" checked>
+       
+           <label for="Tienda">Entrega en Tienda</label> <input id="Tienda" name="tipoEntrega" type="radio" value="Tienda"> <br>
+       
+           <label for="Efectivo">Efectivo</label>       
+       
+           <input type="checkbox" id="Efectivo" name="metPago" value=”Efectivo”>
+       
+           <label for="Vales">Vales de despensa</label>       
+       
+           <input type="checkbox" id="Vales" name="metPago" value=”Vales”>
+       
+           <label for="Tarjeta">Tarjeta debito/crédito</label>       
+       
+           <input type="checkbox" id="Tarjeta" name="metPago" value=”Tarjeta”><br>
+       
+           <label for="fechaEntrega">Fecha de envío</label>
+       
+           <input type="date" id="fechaEntrega" name="fechaEntrega" step="1" 
+       
+           min="2021-01-19" max="2021-01-24" required><br>
+       
+           <label for="horaEntrega">Hora de entrega</label> 
+       
+           <input type="time" id="horaEntrega" name="horaEntrega" 
+       
+           min="08:00" max="21:59" step="2"required> <br>
+       
+           <label for="numCajas">Número de cajas</label>
+       
+           <input id="numCajas" name="numCajas" type="range" min="1" max="5" step="1" value="1"><br>
+       
+           <label for="email">Introduce tu correo electrónico:</label>
+       
+       
+       
+           <input type="email" id="email" name="email"
+       
+               size="30"  list="listaformatos"required>
+       
+               <datalist id="listaformatos">
+       
+                   <option>.com</option>       
+       
+                   <option>.mx</option>          
+       
+                   <option>.com.mx</option>          
+       
+                   <option>.org</option>          
+       
+                 </datalist>
+       
+           <br>
+       
+           <input type="submit" value="Enviar Datos" name="Enviar" >
+       
+       
+       </form>
+
+
+
+
+
+    </body>
+
+</html>
